@@ -54,7 +54,7 @@ routes.get("/editar", (req, res) => {
             if (data.posts[i].nombre === nombreC) {
                 data.posts[i].precio = newPrice;
                 found = true;
-                break; // Salir del ciclo una vez que se hace la modificación
+                break; 
             }
         }
     
