@@ -87,7 +87,7 @@ routes.get("/eliminar", (req, res) => {
             fs.writeFileSync("data/deportes.json", JSON.stringify(data, null, 2), "utf-8"); 
             res.sendFile(__dirname + "/views/agregado.html");
         } else {
-            res.status(404).send("Nombre no encontrado.");
+            res.status(404).sendFile(__dirname + "/views/notfound.html")
         }
     }else{
         res.sendFile(__dirname + "/views/notfound.html")
