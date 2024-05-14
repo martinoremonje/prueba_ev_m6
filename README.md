@@ -9,6 +9,7 @@ y el módulo de sistema de archivos de Node.js, lo que facilita la persistencia 
 - **Frontend:** JavaScript, Bootstrap
 - **Backend:** Node.js con Express
 - **Almacenamiento de datos:** Filesystem
+- - **Responsive:** For small Devices
 
 ## Características
 - Agregar un nuevo deporte con su respectivo precio.
