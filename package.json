@@ -8,8 +8,8 @@
     "start": "node --watch index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Martin Orellana",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3",

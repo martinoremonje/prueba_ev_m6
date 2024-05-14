@@ -39,7 +39,7 @@ routes.post("/agregar", (req,res)=>{
 routes.get("/deportes", (req, res)=>{
     const data = JSON.parse(fs.readFileSync(`data/deportes.json`, 'utf-8'));
     const deportes = data.posts.map(e=>{
-        return `${e.nombre}`
+        return e.nombre
     });
     res.json({deportes})
 });
