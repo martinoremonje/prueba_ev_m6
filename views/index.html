@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1>Discipline Spa App Database</h1>
+    </nav>
+  <div class="main-div">
+    <div class="agregar">
+
+        <h2>Post</h2>
+        <form  action="/agregar" method="post">
+            <div>
+                <label for="nombre">Name:</label>
+                <input type="text" name="nombre" id="nombre"/>
+            </div>
+            <div>
+                <label for="nombre">Price:</label>
+                <input type="text" name="precio" id="precio"/>
+            </div>
+            <input type="submit" value="Agregar"/>
+        </form>
+    </div>
+    <div class="editar">
+
+        <h2>Edit</h2>
+        <form  action="/editar" >
+            <div>
+                <label for="nombre">Name:</label>
+                <input type="text" name="nombreC" id="nombreC"/>
+            </div>
+            <div>
+                <label for="nombre">New Price:</label>
+                <input type="text" name="newPrice" id="newPrice"/>
+            </div>
+            <input style="background-color: yellow;" type="submit" value="Editar"/>
+        </form>
+    </div>
+    <div class="eliminar">
+
+        <h2>Delete</h2>
+        <form  action="/eliminar" >
+            <div>
+                <label for="nombre">Name:</label>
+                <input type="text" name="nombreE" id="nombreE"/>
+            </div>
+            <input style="background-color: red;" type="submit" value="Eliminar"/>
+        </form>
+    </div>
+  </div>
+  <h3 style="text-align: center;color: aliceblue;">↓ Check out our sports here ↓</h3>
+  <div class="center-container">
+   
+    <a href="/deportes"><img src="/assets/img/sports.png"/></a>
+</div>
+   <footer><span>Copyright Martin OreMonje</span><span>For Discipline Spa Employees Only</span></footer>
+</body>
+</html>
+

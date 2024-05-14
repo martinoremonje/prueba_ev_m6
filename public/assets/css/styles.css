@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 69%, rgba(42,255,85,1) 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+    margin: 0;
+}
+nav{
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: rgb(42,255,85);
+    background: linear-gradient(0deg, rgba(42,255,85,1) 0%, rgba(0,0,0,0.8631827731092436) 34%);
+}
+
+.main-div {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.agregar, .editar, .eliminar {
+    width: 25%;
+    padding: 15px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+.agregar h2, .editar h2, .eliminar h2 {
+    color: #333; 
+    font-size: 25px; 
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px; 
+    font-weight: bold;
+    color: #555; 
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    width: calc(100% - 18px); 
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+.center-container {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+a[href="/deportes"] {
+    display:inline-block; 
+    text-align: center;
+    text-decoration: none; 
+    margin: 0 auto;
+}
+
+a[href="/deportes"] img {
+    width: 200px;
+    height: 70px; 
+}
+footer {
+    background-color: black; 
+    color: white;
+    padding: 10px 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .agregar, .editar, .eliminar {
+        width: 90%; 
+        margin: 10px auto;
+    }
+    .main-div {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .center-container{
+        margin-bottom: 12px;
+    }
+    footer{
+        display: none;
+    }
+}
