@@ -5,7 +5,9 @@ import path from "path";
 const routes = express.Router();
 const __dirname = path.resolve();
 
-
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 routes.get("/", (req, res) => {
     const { posts } = JSON.parse(fs.readFileSync('data/deportes.json', 'utf-8'));
     
@@ -14,7 +16,7 @@ routes.get("/", (req, res) => {
             console.error('Error leyendo el archivo HTML:', err);
             return res.status(500).send("Error en el servidor al leer el archivo HTML");
         } 
-        let listItems = posts.map(post => `<li>${post.nombre}-$${post.precio}</li>`).join(''); 
+        let listItems = posts.map(post => `<li>${capitalizeFirstLetter(post.nombre)}-$${post.precio}</li>`).join(''); 
         html = html.replace('<ol id="show-li"></ol>', `<ul id="show-li">${listItems}</ul>`);
         res.send(html);
     });

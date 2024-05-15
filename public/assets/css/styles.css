@@ -97,6 +97,7 @@ a[href="/deportes"] img {
     height: 70px; 
 }
 footer {
+    margin-top: 6vh;
     background-color: black; 
     color: white;
     padding: 10px 20px;
