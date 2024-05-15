@@ -68,6 +68,17 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+#show {
+    width: 180px;
+    height: auto;
+    border: 2px solid rgb(202, 202, 202);
+    background-color: white;
+    padding: 20px; 
+    margin-left: 50px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
 .center-container {
     margin-top: 4vh;
     display: flex;
@@ -92,7 +103,6 @@ footer {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    position: fixed; 
     bottom: 0; 
     left: 0;
     width: 100%; 
