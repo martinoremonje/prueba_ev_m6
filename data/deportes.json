@@ -1,12 +1,1 @@
-{
-  "posts": [
-    {
-      "nombre": "soccer",
-      "precio": "123"
-    },
-    {
-      "nombre": "basketball",
-      "precio": "345"
-    }
-  ]
-}
+{"posts":[{"nombre":"soccer","precio":"123"},{"nombre":"basketball","precio":"345"},{"nombre":"polo","precio":"12000"}]}

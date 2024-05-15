@@ -14,7 +14,7 @@ routes.get("/", (req, res) => {
     fs.readFile(__dirname + '/views/index.html', 'utf8', (err, html) => {
         
         let listItems = posts.map(post => `<li>${capitalizeFirstLetter(post.nombre)}-$${post.precio}</li>`).join(''); 
-        html = html.replace('<ol id="show-li"></ol>', `<ul id="show-li">${listItems}</ul>`);
+        html = html.replace('<ul id="show-li"></ul>', `<ul id="show-li">${listItems}</ul>`);
         res.send(html);
     });
 });
