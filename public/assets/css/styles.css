@@ -40,7 +40,7 @@ nav{
 }
 
 .agregar h2, .editar h2, .eliminar h2 {
-    color: #333; 
+    color: #000000; 
     font-size: 25px; 
     margin-bottom: 15px;
     text-align: center;
